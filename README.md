@@ -67,3 +67,54 @@ Internship / Employee Feedback
       Sentiment Prediction
               ↓
         Gradio Interface
+---
+
+## 📊 Model Evaluation
+
+The fine-tuned DistilBERT model was evaluated on the validation dataset using Accuracy, Precision, Recall, and F1-score.
+
+### Overall Performance
+
+| Metric | Score |
+|---|---:|
+| Accuracy | **68.97%** |
+| Precision | **67.31%** |
+| Recall | **68.97%** |
+| F1-score | **66.96%** |
+| Evaluation Loss | **0.6580** |
+
+### Classification Report
+
+| Sentiment | Precision | Recall | F1-score | Support |
+|---|---:|---:|---:|---:|
+| Negative | 74.36% | 80.56% | 77.33% | 36 |
+| Neutral | 57.69% | 37.50% | 45.45% | 40 |
+| Positive | 70.59% | 90.00% | 79.12% | 40 |
+| **Weighted Average** | **67.31%** | **68.97%** | **66.96%** | **116** |
+
+### Confusion Matrix
+
+The confusion matrix shows how the model's predictions compare with the actual sentiment labels.
+
+![Confusion Matrix](results/confusion_matrix.png)
+
+### Key Findings
+
+- The model achieved an overall accuracy of **68.97%**.
+- **Positive** feedback had the strongest recall at **90.00%**.
+- **Negative** feedback achieved a recall of **80.56%**.
+- **Neutral** feedback was the most challenging class, with a recall of **37.50%**.
+- The model frequently confused Neutral feedback with both Negative and Positive feedback.
+
+## 🖥️ Interactive Demo
+
+The project includes a Gradio-based interface that allows users to enter internship or employee feedback and receive a sentiment prediction.
+
+Example:
+
+```text
+Input:
+"The internship provided an excellent learning experience."
+
+Prediction:
+Positive
