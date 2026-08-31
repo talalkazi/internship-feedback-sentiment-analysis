@@ -1,0 +1,17 @@
+Internship Feedback Sentiment Analysis
+==================================================
+
+Accuracy: 0.6897
+Accuracy: 68.97%
+
+Classification Report
+==================================================
+              precision    recall  f1-score   support
+
+    Negative     0.7436    0.8056    0.7733        36
+     Neutral     0.5769    0.3750    0.4545        40
+    Positive     0.7059    0.9000    0.7912        40
+
+    accuracy                         0.6897       116
+   macro avg     0.6755    0.6935    0.6730       116
+weighted avg     0.6731    0.6897    0.6696       116
